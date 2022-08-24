@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  tse:
+    image: tse
+    volumes:
+      - candidatos:/app/candidatos
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+volumes:
+  candidatos:
+    name: candidatos
