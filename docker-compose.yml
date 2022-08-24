@@ -4,7 +4,7 @@ services:
   tse:
     image: tse
     volumes:
-      - candidatos:/app/candidatos
+      - ~/candidatos:/app/candidatos
     build:
       context: .
       dockerfile: ./Dockerfile
